@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <div class="calculator">
+        <div class="display" id="display" tabindex="0" role="textbox" aria-label="Calculator display" aria-readonly="true">0000</div>
+        
+        <div class="buttons">
+            <button class="btn btn-clear" id="clear" aria-label="Clear all">C</button>
+            <button class="btn btn-backspace" id="backspace" aria-label="Backspace">⌫</button>
+            <button class="btn btn-operator" id="divide" data-operator="/" aria-label="Divide">÷</button>
+            <button class="btn btn-operator" id="multiply" data-operator="*" aria-label="Multiply">×</button>
+            
+            <button class="btn btn-number" data-number="7">7</button>
+            <button class="btn btn-number" data-number="8">8</button>
+            <button class="btn btn-number" data-number="9">9</button>
+            <button class="btn btn-operator" id="subtract" data-operator="-" aria-label="Subtract">−</button>
+            
+            <button class="btn btn-number" data-number="4">4</button>
+            <button class="btn btn-number" data-number="5">5</button>
+            <button class="btn btn-number" data-number="6">6</button>
+            <button class="btn btn-operator" id="add" data-operator="+" aria-label="Add">+</button>
+            
+            <button class="btn btn-number" data-number="1">1</button>
+            <button class="btn btn-number" data-number="2">2</button>
+            <button class="btn btn-number" data-number="3">3</button>
+            <button class="btn btn-equals" id="equals" aria-label="Equals" rowspan="2">=</button>
+            
+            <button class="btn btn-number btn-zero" data-number="0">0</button>
+            <button class="btn btn-decimal" id="decimal" aria-label="Decimal point">.</button>
+        </div>
+    </div>
     
-</body>
+    <script src="./index.js" defer></script>
 </html>
