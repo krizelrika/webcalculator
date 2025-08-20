@@ -30,3 +30,8 @@ A simple web-based calculator built with HTML, CSS, and JavaScript. The project 
 - HTML → structure and display.
 - CSS → styling and layout.
 - JavaScript → logic, DOM updates, event handling.
+
+### Notes
+- Only evaluates when two numbers and an operator are supplied.
+- Consecutive operator presses do not trigger evaluation; only the latest operator is stored.
+- Long decimal results are rounded to avoid overflowing the display.
